@@ -10,12 +10,12 @@ char ** parse_args (char * line) {
   int i = 0;
   char * now;
   while (now != NULL) {
-    ans [i] = strsep (now, " ");
+    ans [i] = strsep (&now, " ");
     i ++;
   }
   return ans;
 }
 int main () {
-  char ** args = parse_args ("does this work"); 
+  char ** args = parse_args ("does this work");
   return 0;
 }
