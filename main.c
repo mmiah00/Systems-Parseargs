@@ -16,6 +16,6 @@ char ** parse_args (char * line) {
   return ans;
 }
 int main () {
-
+  char ** args = parse_args ("does this work"); 
   return 0;
 }
