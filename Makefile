@@ -1,12 +1,12 @@
 all: main.o
-        gcc main.o
+	gcc main.o
 
-main.o:
-        gcc -c main.c
+main.o: main.c
+	gcc -c main.c
 
-run:
-        ./a.out
+run: 
+	./a.out
 
-clean:
-        *rm .o
+remove: 
+	rm *.o
 
